@@ -1,0 +1,30 @@
+{
+  "name": "realtour-backend-functions",
+  "description": "Cloud functions for RealTour.",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.0.0",
+    "@types/cors": "^2.8.6",
+    "cors": "^2.8.5",
+    "express": "~4.16.1",
+    "firebase-admin": "^8.12.1",
+    "firebase-functions": "^3.7.0",
+    "pg": "^8.1.0",
+    "twilio": "^3.42.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.1.6",
+    "nodemon": "^2.0.3"
+  },
+  "private": true
+}
